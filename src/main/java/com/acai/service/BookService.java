@@ -1,6 +1,7 @@
 package com.acai.service;
 
 import com.acai.domain.Book;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  * @author YangMingCai
  * @date 2023年03月08日 16:11
  */
+@Transactional
 public interface BookService {
 
     /**

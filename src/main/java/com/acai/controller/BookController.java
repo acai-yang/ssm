@@ -41,7 +41,6 @@ public class BookController {
 
     @GetMapping("/{id}")
     public Result getBuId(@PathVariable Integer id) {
-        int a = 1 / 0;
         Book book = bookService.getById(id);
         Integer code = book != null ? Code.GET_OK : Code.GET_ERR;
         String msg = book != null ? "" : "数据获取失败，请重试";
